@@ -21,6 +21,9 @@ const generateMockData = (): RealtimeData => {
     'A相电压': { value: getRandomFloat(218.0, 222.0, 2), unit: 'V' },
     'B相电压': { value: Math.random() > 0.8 ? getRandomFloat(215.0, 225.0, 2) : getRandomFloat(0.0, 5.0, 2), unit: 'V' },
     'C相电压': { value: Math.random() > 0.8 ? getRandomFloat(215.0, 225.0, 2) : getRandomFloat(0.0, 5.0, 2), unit: 'V' },
+    'A相电流': { value: getRandomFloat(2.0, 2.0, 2), unit: 'A' },
+    'B相电流': { value: Math.random() > 0.8 ? getRandomFloat(215.0, 225.0, 2) : getRandomFloat(0.0, 5.0, 2), unit: 'A' },
+    'C相电流': { value: Math.random() > 0.8 ? getRandomFloat(215.0, 225.0, 2) : getRandomFloat(0.0, 5.0, 2), unit: 'A' },
     '总有功功率': { value: getRandomFloat(0.5, 10.0, 2), unit: 'kW' },
   };
   return {
